@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/theme/app_theme.dart';
 import 'data/models/contributor.dart';
@@ -8,9 +9,19 @@ import 'presentation/screens/profile_screen.dart';
 import 'presentation/screens/search_screen.dart';
 import 'presentation/screens/projects_screen.dart';
 import 'presentation/widgets/bottom_nav_bar.dart';
+import 'main.dart' show SplashScreen;
 
-class GSSoCApp extends StatelessWidget {
+final showSplashProvider = StateProvider<bool>((ref) => true);
+
+class GSSoCApp extends ConsumerStatefulWidget {
   GSSoCApp({super.key});
+
+  @override
+  ConsumerState<GSSoCApp> createState() => _GSSoCAppState();
+}
+
+class _GSSoCAppState extends ConsumerState<GSSoCApp> {
+  bool _showSplash = true;
 
   final _router = GoRouter(
     initialLocation: '/',
@@ -81,12 +92,23 @@ class GSSoCApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      title: 'GSSoC Leaderboard',
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.dark,
-      routerConfig: _router,
-    );
+    return _showSplash
+        ? MaterialApp(
+            title: 'GSSoC Leaderboard',
+            debugShowCheckedModeBanner: false,
+            theme: AppTheme.dark,
+            home: SplashScreen(
+              onComplete: () {
+                setState(() => _showSplash = false);
+              },
+            ),
+          )
+        : MaterialApp.router(
+            title: 'GSSoC Leaderboard',
+            debugShowCheckedModeBanner: false,
+            theme: AppTheme.dark,
+            routerConfig: _router,
+          );
   }
 }
 

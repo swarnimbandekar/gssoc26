@@ -1,16 +1,78 @@
-# gssocleaderboard
+# GSSoC Leaderboard
 
-gssoc26 leaderboard
+A Flutter mobile application for tracking and displaying the GSSoC (GirlScript Summer of Code) contribution leaderboard.
+
+## Features
+
+- Real-time leaderboard rankings
+- Contributor profiles with detailed statistics
+- Search functionality
+- Project tracking
+- Beautiful glassmorphic UI design
+
+## Screenshots
+
+*(Add screenshots here)*
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK (3.x or higher)
+- Dart SDK (3.x or higher)
+- Android Studio / Xcode for mobile development
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/gssoc-leaderboard.git
+cd gssoc-leaderboard
+```
+
+2. Install dependencies:
+```bash
+flutter pub get
+```
+
+3. Run the app:
+```bash
+flutter run
+```
+
+## Building
+
+### Android
+```bash
+flutter build apk --release
+```
+APK will be in `build/app/outputs/flutter-apk/app-release.apk`
+
+### iOS
+```bash
+flutter build ios --release
+```
+Build will be in `build/ios/iphoneos/`
+
+### Web
+```bash
+flutter build web
+```
+Build will be in `build/web/`
+
+## Architecture
+
+The app follows a clean architecture pattern with Riverpod for state management:
+
+- `lib/core/` - Constants, themes, utilities
+- `lib/data/` - Models and repositories
+- `lib/providers/` - State management
+- `lib/presentation/` - Screens and widgets
+
+## Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
