@@ -1,6 +1,6 @@
 # Contributing to GSSoC App
 
-Thank you for your interest in contributing!
+Thank you for your interest in contributing! Star this repo and start.
 
 ## How to Contribute
 
