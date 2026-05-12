@@ -1,4 +1,4 @@
-# Contributing to GSSoC Leaderboard
+# Contributing to GSSoC App
 
 Thank you for your interest in contributing!
 
