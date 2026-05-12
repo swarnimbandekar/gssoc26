@@ -1,11 +1,11 @@
 {
-    "name": "gssocleaderboard",
-    "short_name": "gssocleaderboard",
+    "name": "GSSoC 26 Leaderboard",
+    "short_name": "GSSoC 26",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "gssoc26 leaderboard",
+    "background_color": "#06080F",
+    "theme_color": "#06080F",
+    "description": "GSSoC 26 Leaderboard",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

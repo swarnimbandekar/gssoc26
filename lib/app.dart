@@ -94,7 +94,7 @@ class _GSSoCAppState extends ConsumerState<GSSoCApp> {
   Widget build(BuildContext context) {
     return _showSplash
         ? MaterialApp(
-            title: 'GSSoC Leaderboard',
+            title: 'GSSoC 26',
             debugShowCheckedModeBanner: false,
             theme: AppTheme.dark,
             home: SplashScreen(
@@ -104,7 +104,7 @@ class _GSSoCAppState extends ConsumerState<GSSoCApp> {
             ),
           )
         : MaterialApp.router(
-            title: 'GSSoC Leaderboard',
+            title: 'GSSoC 26',
             debugShowCheckedModeBanner: false,
             theme: AppTheme.dark,
             routerConfig: _router,

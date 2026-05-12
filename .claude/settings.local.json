@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(flutter pub *)",
-      "Bash(flutter build *)"
+      "Bash(flutter build *)",
+      "Bash(curl -s \"https://gssoc.girlscript.org/api/leaderboard?page=1&limit=5&role=all&q=\")"
     ]
   }
 }
