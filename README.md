@@ -1,4 +1,4 @@
-# GSSoC Leaderboard
+# GSSoC 26
 
 A Flutter mobile application for tracking and displaying the GSSoC (GirlScript Summer of Code) contribution leaderboard.
 
