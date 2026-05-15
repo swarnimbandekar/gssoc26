@@ -301,7 +301,7 @@ class _ProjectsScreenState extends ConsumerState<ProjectsScreen> {
     required ValueChanged<String> onChanged,
   }) {
     return DropdownButtonFormField<String>(
-      initialValue: value,
+      value: value,
       items: items
           .map(
             (v) => DropdownMenuItem<String>(
