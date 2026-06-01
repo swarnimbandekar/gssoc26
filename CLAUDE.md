@@ -55,5 +55,6 @@ Clean architecture with Riverpod for state management:
 
 ## Asset Notes
 
+
 - `Github bubble Lottie JSON animation.json` - Animated GitHub logo used on profile screens
 - `gssoclogo.png` - GSSoC branding asset
