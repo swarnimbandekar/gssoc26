@@ -4,6 +4,8 @@ A Flutter mobile application for tracking and displaying the GSSoC (GirlScript S
 
 ## Features
 
+
+
 - Real-time leaderboard rankings
 - Contributor profiles with detailed statistics
 - Search functionality
